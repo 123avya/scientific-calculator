@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, white, white);
+}
+
+.calculator {
+    background: #2c3e50;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 -5px 15px rgba(0,0,0,0.3),
+        inset 0 5px 15px rgba(255,255,255,0.2);
+    width: 450px;
+}
+
+.calc-container {
+    background: #03c2b8;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.display {
+    background: #1c2833;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: right;
+    box-shadow: 
+        inset 0 2px 10px rgba(0,0,0,0.7),
+        0 2px 5px rgba(255,255,255,0.1);
+}
+
+.previous-operand {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2rem;
+    min-height: 24px;
+    margin-bottom: 5px;
+}
+
+.current-operand {
+    color: #ecf0f1;
+    font-size: 2.5rem;
+    font-weight: 500;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 
+        0 4px 8px rgba(0,0,0,0.2),
+        inset 0 2px 2px rgba(255,255,255,0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 
+        0 2px 4px rgba(0,0,0,0.2),
+        inset 0 1px 1px rgba(255,255,255,0.1);
+}
+
+.number {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.function {
+    background: #3498db;
+    color: white;
+}
+
+.memory {
+    background: #9b59b6;
+    color: white;
+}
+
+.operator {
+    background: #e67e22;
+    color: white;
+}
+
+.equals {
+    background: #27ae60;
+    color: white;
+    grid-column: span 6;
+}
+
+.clear {
+    background: #e74c3c;
+    color: white;
+}
+
+sup {
+    font-size: 0.6em;
+    position: relative;
+    top: -0.5em;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+
+    button {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+}
