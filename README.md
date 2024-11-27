@@ -1,6 +1,7 @@
-                               Scientific Calculator
-A powerful and easy-to-use scientific calculator with advanced mathematical functionality.
-Overview:
+                                     Scientific Calculator
+ A powerful and easy-to-use scientific calculator with advanced mathematical functionality.
+ Overview:
+ 
 This is a feature-rich scientific calculator designed for performing a wide variety of mathematical operations, including basic arithmetic, trigonometry, logarithms, and more. The tool is built to provide fast and accurate results, making it ideal for students, professionals, and anyone in need of a robust mathematical calculator.
 
 Features:
